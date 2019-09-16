@@ -1,0 +1,53 @@
+﻿@model Sol_DI.Models.StatsModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-4">
+
+            <div class="card">
+                <div class="card-header">
+                    Total Tasks
+                </div>
+                <div class="card-body">
+                    <h5>@Model.TotalTask</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-4">
+
+            <div class="card">
+                <div class="card-header">
+                    Complete Tasks
+                </div>
+                <div class="card-body">
+                    <h5>@Model.CompleteTask</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-4">
+
+            <div class="card">
+                <div class="card-header">
+                    Pending Tasks
+                </div>
+                <div class="card-body">
+                    <h5>@Model.PendingTask</h5>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
